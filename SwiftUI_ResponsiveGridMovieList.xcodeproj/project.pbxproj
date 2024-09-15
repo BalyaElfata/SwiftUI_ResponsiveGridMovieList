@@ -11,6 +11,13 @@
 		21EB72292C9720B700943F29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EB72282C9720B700943F29 /* ContentView.swift */; };
 		21EB722B2C9720B900943F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EB722A2C9720B900943F29 /* Assets.xcassets */; };
 		21EB722E2C9720B900943F29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EB722D2C9720B900943F29 /* Preview Assets.xcassets */; };
+		23D0515A2C97313F00A45CBF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D051592C97313F00A45CBF /* ContentViewModel.swift */; };
+		23FB72062C9724920082C88D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB72052C9724920082C88D /* ApiService.swift */; };
+		23FB72082C9724C80082C88D /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB72072C9724C80082C88D /* Protocol.swift */; };
+		23FB720B2C9725310082C88D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB720A2C9725310082C88D /* Movie.swift */; };
+		23FB720E2C9729410082C88D /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB720D2C9729410082C88D /* ResultState.swift */; };
+		23FB72112C972D2F0082C88D /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB72102C972D2F0082C88D /* MovieResponse.swift */; };
+		23FB72132C972D6B0082C88D /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB72122C972D6B0082C88D /* Dates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		21EB72282C9720B700943F29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21EB722A2C9720B900943F29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EB722D2C9720B900943F29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23D051592C97313F00A45CBF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		23FB72052C9724920082C88D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		23FB72072C9724C80082C88D /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		23FB720A2C9725310082C88D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		23FB720D2C9729410082C88D /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		23FB72102C972D2F0082C88D /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		23FB72122C972D6B0082C88D /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +65,12 @@
 		21EB72252C9720B700943F29 /* SwiftUI_ResponsiveGridMovieList */ = {
 			isa = PBXGroup;
 			children = (
+				23FB720F2C972D240082C88D /* DTO */,
+				23FB720C2C97292A0082C88D /* Helper */,
+				23FB72092C97252A0082C88D /* Model */,
+				23FB72042C9724750082C88D /* Service */,
 				21EB72262C9720B700943F29 /* SwiftUI_ResponsiveGridMovieListApp.swift */,
+				23D051592C97313F00A45CBF /* ContentViewModel.swift */,
 				21EB72282C9720B700943F29 /* ContentView.swift */,
 				21EB722A2C9720B900943F29 /* Assets.xcassets */,
 				21EB722C2C9720B900943F29 /* Preview Content */,
@@ -65,6 +84,40 @@
 				21EB722D2C9720B900943F29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23FB72042C9724750082C88D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				23FB72052C9724920082C88D /* ApiService.swift */,
+				23FB72072C9724C80082C88D /* Protocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		23FB72092C97252A0082C88D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23FB720A2C9725310082C88D /* Movie.swift */,
+				23FB72122C972D6B0082C88D /* Dates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23FB720C2C97292A0082C88D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				23FB720D2C9729410082C88D /* ResultState.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		23FB720F2C972D240082C88D /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				23FB72102C972D2F0082C88D /* MovieResponse.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FB72112C972D2F0082C88D /* MovieResponse.swift in Sources */,
+				23FB720B2C9725310082C88D /* Movie.swift in Sources */,
 				21EB72292C9720B700943F29 /* ContentView.swift in Sources */,
+				23FB720E2C9729410082C88D /* ResultState.swift in Sources */,
 				21EB72272C9720B700943F29 /* SwiftUI_ResponsiveGridMovieListApp.swift in Sources */,
+				23D0515A2C97313F00A45CBF /* ContentViewModel.swift in Sources */,
+				23FB72062C9724920082C88D /* ApiService.swift in Sources */,
+				23FB72082C9724C80082C88D /* Protocol.swift in Sources */,
+				23FB72132C972D6B0082C88D /* Dates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_ResponsiveGridMovieList/Preview Content\"";
-				DEVELOPMENT_TEAM = H3779UJ6B2;
+				DEVELOPMENT_TEAM = BHS88Y2WBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -285,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.balya.SwiftUI-ResponsiveGridMovieList";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hendra.SwiftUI-ResponsiveGridMovieList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,7 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_ResponsiveGridMovieList/Preview Content\"";
-				DEVELOPMENT_TEAM = H3779UJ6B2;
+				DEVELOPMENT_TEAM = BHS88Y2WBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.balya.SwiftUI-ResponsiveGridMovieList";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hendra.SwiftUI-ResponsiveGridMovieList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
